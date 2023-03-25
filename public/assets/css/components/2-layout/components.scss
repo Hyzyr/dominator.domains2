@@ -525,7 +525,6 @@
     }
   }
 }
-
 .scrollingWords {
   &__content {
     display: flex;
@@ -534,6 +533,11 @@
     font-weight: 600;
     font-family: $font-primary;
     white-space: nowrap;
+    background: $gradient-dark;
+    opacity: 0.8;
+    box-shadow: 0px 2.3px 17px #9642c5;
+    border-radius: 20px;
+    padding: 0.5em 1em;
 
     &-box {
       height: 3rem;
