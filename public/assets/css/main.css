@@ -961,8 +961,8 @@ li {
   -webkit-text-fill-color: transparent;
 }
 .gradientText--light span {
-  background: -webkit-gradient(linear, left top, right top, color-stop(-16.5%, #b0a9ff), color-stop(37.49%, #9eb2ff), color-stop(125.5%, #7deaff));
-  background: linear-gradient(90deg, #b0a9ff -16.5%, #9eb2ff 37.49%, #7deaff 125.5%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(-16.5%, #c5c0ff), color-stop(37.49%, #b8c6ff), color-stop(125.5%, #a0f0ff));
+  background: linear-gradient(90deg, #c5c0ff -16.5%, #b8c6ff 37.49%, #a0f0ff 125.5%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -1888,7 +1888,7 @@ li {
 }
 
 .hero {
-  padding: 40px 0 80px 0;
+  padding: 100px 0 110px 0;
 }
 .hero__bg-img {
   position: absolute;
@@ -1983,7 +1983,7 @@ li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  min-height: 60vh;
+  min-height: 50vh;
 }
 .hero__inner-title {
   margin-bottom: 30px;
@@ -2047,7 +2047,7 @@ li {
   width: 100%;
   max-width: 540px;
   font-size: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 .hero__inner-coins span {
   display: -webkit-box;
@@ -2119,6 +2119,7 @@ li {
           align-items: center;
   width: 100%;
   max-width: 400px;
+  padding-left: 50px;
 }
 .hero__inner-apps {
   display: -webkit-box;
@@ -2253,6 +2254,20 @@ li {
           flex-direction: row-reverse;
   margin-top: 50px;
 }
+.hero__footer .scrollingWords {
+  margin-left: 50px;
+  width: 100%;
+  max-width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.hero__footer .scrollingWords ul {
+  margin: 0 0.5em 0 0;
+}
 .hero__footer-tag {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2269,6 +2284,11 @@ li {
   padding: 4px;
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
+  width: calc(40% - 80px);
+  max-width: 480px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-right: 20px;
 }
 .hero__footer-tag span {
   background: #4b2965;
@@ -2300,6 +2320,9 @@ li {
 .hero__footer-tag .copyBox__text {
   margin: 0 auto;
   font-size: 11px;
+}
+.hero__footer-tag .copyBox__text img {
+  margin-left: 1em;
 }
 .hero__footer-tag:hover {
   opacity: 1;

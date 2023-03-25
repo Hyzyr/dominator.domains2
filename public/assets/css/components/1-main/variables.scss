@@ -50,9 +50,9 @@ $gradient-eth: linear-gradient(
 );
 $gradient-eth-lighter: linear-gradient(
   90deg,
-  mix(#968cff, $white, 75%) -16.5%,
-  mix(#7e98ff, $white, 75%) 37.49%,
-  mix(#52e3ff, $white, 75%) 125.5%
+  mix(#968cff, $white, 55%) -16.5%,
+  mix(#7e98ff, $white, 55%) 37.49%,
+  mix(#52e3ff, $white, 55%) 125.5%
 );
 $gradient-dark: linear-gradient(90deg, #410176 0%, #080609 96.96%);
 $gradient-light: linear-gradient(

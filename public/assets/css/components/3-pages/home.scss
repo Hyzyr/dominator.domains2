@@ -1,5 +1,5 @@
 .hero {
-  padding: 40px 0 80px 0;
+  padding: 100px 0 110px 0;
   &__bg {
     &-img {
       position: absolute;
@@ -88,7 +88,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 60vh;
+    min-height: 50vh;
 
     &-title {
       margin-bottom: 30px;
@@ -142,7 +142,7 @@
       width: 100%;
       max-width: 540px;
       font-size: 20px;
-      margin-bottom: 50px;
+      margin-bottom: 70px;
 
       span {
         display: flex;
@@ -203,6 +203,7 @@
       align-items: center;
       width: 100%;
       max-width: 400px;
+      padding-left: 50px;
     }
     &-apps {
       display: flex;
@@ -302,6 +303,17 @@
     flex-direction: row-reverse;
     margin-top: 50px;
 
+    .scrollingWords {
+      margin-left: 50px;
+      width: 100%;
+      max-width: 400px;
+      display: flex;
+      justify-content: center;
+
+      ul {
+        margin: 0 0.5em 0 0;
+      }
+    }
     &-tag {
       display: flex;
       align-items: center;
@@ -311,6 +323,10 @@
       border-radius: 20px;
       padding: 4px;
       transition: 0.2s ease;
+      width: calc(40% - 80px);
+      max-width: 480px;
+      box-sizing: border-box;
+      margin-right: 20px;
 
       span {
         background: $black-main;
@@ -344,6 +360,9 @@
       .copyBox__text {
         margin: 0 auto;
         font-size: 11px;
+        img {
+          margin-left: 1em;
+        }
       }
       &:hover {
         opacity: 1;
