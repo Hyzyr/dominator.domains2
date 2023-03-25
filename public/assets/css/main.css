@@ -1108,6 +1108,8 @@ li {
           box-shadow: 0px 2.3px 17px #9642c5;
   border-radius: 20px;
   padding: 0.5em 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .scrollingWords__content-box {
   height: 3rem;
@@ -1115,7 +1117,7 @@ li {
   overflow: hidden;
 }
 .scrollingWords__content-box ul {
-  margin: 0 0.625rem;
+  margin: 0;
   padding: 0;
   -webkit-animation: scrollUp 7s infinite;
           animation: scrollUp 7s infinite;
@@ -1133,6 +1135,10 @@ li {
   height: 3rem;
   list-style: none;
   color: #08a5ff;
+}
+.scrollingWords__content-box ul li span {
+  color: #fff;
+  margin-left: 0.4em;
 }
 
 @-webkit-keyframes scrollUp {
@@ -2134,8 +2140,11 @@ li {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  max-width: 400px;
+  max-width: 440px;
   padding-left: 50px;
+}
+.hero__inner-buy .button span {
+  padding: 1.3em 1.6em;
 }
 .hero__inner-apps {
   display: -webkit-box;
@@ -2273,7 +2282,7 @@ li {
 .hero__footer .scrollingWords {
   margin-left: 50px;
   width: 100%;
-  max-width: 400px;
+  max-width: 440px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2282,7 +2291,7 @@ li {
           justify-content: center;
 }
 .hero__footer .scrollingWords ul {
-  margin: 0 0.5em 0 0;
+  margin: 0;
 }
 .hero__footer-tag {
   display: -webkit-box;

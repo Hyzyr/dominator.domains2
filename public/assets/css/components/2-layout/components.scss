@@ -538,6 +538,7 @@
     box-shadow: 0px 2.3px 17px #9642c5;
     border-radius: 20px;
     padding: 0.5em 1em;
+    box-sizing: border-box;
 
     &-box {
       height: 3rem;
@@ -545,7 +546,7 @@
       overflow: hidden;
 
       ul {
-        margin: 0 0.625rem;
+        margin: 0;
         padding: 0;
         animation: scrollUp 7s infinite;
         li {
@@ -555,6 +556,11 @@
           height: 3rem;
           list-style: none;
           color: $color-3;
+
+          span {
+            color: $white;
+            margin-left: 0.4em;
+          }
         }
       }
     }
