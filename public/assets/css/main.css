@@ -1125,21 +1125,7 @@ li {
           justify-content: flex-end;
   height: 3rem;
   list-style: none;
-}
-.scrollingWords__content-box ul li:nth-child(1) {
-  color: #5159f7;
-}
-.scrollingWords__content-box ul li:nth-child(2) {
-  color: #af34ff;
-}
-.scrollingWords__content-box ul li:nth-child(3) {
   color: #08a5ff;
-}
-.scrollingWords__content-box ul li:nth-child(4) {
-  color: #f72585;
-}
-.scrollingWords__content-box ul li:nth-child(5) {
-  color: #e58906;
 }
 
 @-webkit-keyframes scrollUp {
