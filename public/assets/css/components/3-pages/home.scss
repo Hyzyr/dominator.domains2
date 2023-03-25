@@ -163,32 +163,44 @@
         font-style: normal;
         font-weight: 700;
         line-height: 1;
+        animation: moveY 2.6s both infinite alternate-reverse;
+        animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+        animation-timing-function: ease-in-out;
 
         &._arb {
+          animation-delay: #{11 * 0.02}s;
           border-color: #1a71b1;
         }
         &._bnb {
+          animation-delay: #{22 * 0.02}s;
           border-color: #f0b90b;
         }
         &._eth {
+          animation-delay: #{33 * 0.02}s;
           border-color: #7a9bf9;
         }
         &._bitcoin {
+          animation-delay: #{44 * 0.02}s;
           border-color: #ec9e28;
         }
         &._blockchain {
+          animation-delay: #{55 * 0.02}s;
           border-color: #386af1;
         }
         &._crypto {
+          animation-delay: #{66 * 0.02}s;
           border-color: #5843f5;
         }
         &._wallet {
+          animation-delay: #{77 * 0.02}s;
           border-color: #e74a80;
         }
         &._nft {
+          animation-delay: #{88 * 0.02}s;
           border-color: #a63df2;
         }
         &._polygon {
+          animation-delay: #{99 * 0.02}s;
           border-color: #005eb4;
         }
       }
