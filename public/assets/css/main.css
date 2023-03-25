@@ -1887,7 +1887,12 @@ li {
 }
 
 .hero {
-  padding: 100px 0 110px 0;
+  position: relative;
+  padding: 200px 0 110px 0;
+  margin: 0 !important;
+}
+.hero__bg {
+  overflow: hidden;
 }
 .hero__bg-img {
   position: absolute;
@@ -4663,7 +4668,7 @@ li {
     gap: 10px;
   }
   .hero__inner-coins span {
-    font-size: 22px;
+    font-size: 18px;
   }
   .integrations__item strong {
     font-size: 18px;
@@ -4730,43 +4735,31 @@ li {
     font-size: 16px;
     min-width: unset;
   }
+  .hero {
+    padding: 160px 0 80px 0;
+  }
+  .hero__inner-group {
+    width: 55%;
+  }
+  .hero__inner-banner {
+    width: calc(45% - 30px);
+  }
   .hero__inner-list ul li {
     font-size: 20px;
     gap: 10px;
+  }
+  .hero__inner-buy {
+    padding-left: 35px;
   }
   .hero__inner-coins span {
     font-size: 18px;
     width: calc(33.3% - 10px);
   }
-  .hero__inner-banner {
-    width: 53%;
-    right: -2%;
-    -webkit-transform: translateY(40%);
-            transform: translateY(40%);
-  }
-  .hero__inner-group {
-    padding-right: 55%;
-  }
-  .hero__footer {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
   .hero__footer .scrollingWords {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-bottom: 40px;
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
+    margin-left: 35px;
   }
-  .hero__footer-buy {
-    width: 100%;
-    max-width: 400px;
+  .hero__footer-tag {
+    width: calc(45% - 30px);
   }
   .integrations__item {
     padding: 30px 10px;
@@ -5101,7 +5094,14 @@ li {
   .footerSection__inner-links .iconButton {
     padding: 1.5em;
   }
+  .hero {
+    padding: 120px 0 80px 0;
+  }
   .hero__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     max-width: 550px;
     margin: 0 auto;
   }
@@ -5110,15 +5110,15 @@ li {
     margin-bottom: 40px;
   }
   .hero__inner-banner {
-    position: unset;
-    -webkit-transform: unset;
-            transform: unset;
     width: 100%;
     margin: 0 auto;
-    margin-bottom: 40px;
+    margin-top: 50px;
+  }
+  .hero__inner-buy {
+    padding: 0;
+    margin: 0 auto;
   }
   .hero__inner-group {
-    padding: unset;
     width: 100%;
     max-width: unset;
   }
@@ -5127,12 +5127,21 @@ li {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-    gap: 30px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 20px;
   }
   .hero__footer .scrollingWords {
+    margin: 0;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+  }
+  .hero__footer-tag {
+    width: 100%;
+    max-width: 400px;
+    margin: 0;
   }
   .hero .hero__footer-buy .button {
     height: 50px;
@@ -5677,7 +5686,7 @@ li {
     margin-top: 90px;
   }
   .hero {
-    padding: 50px 0;
+    padding: 130px 0 80px 0;
   }
   .hero__inner-list ul li {
     font-size: 18px;
@@ -5943,7 +5952,7 @@ li {
     min-width: unset;
   }
   .hero {
-    padding: 50px 0;
+    padding: 130px 0 60px 0;
   }
   .hero__inner-list ul li {
     font-size: 16px;
