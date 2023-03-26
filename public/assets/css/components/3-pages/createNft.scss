@@ -461,6 +461,16 @@
         &-title {
           margin-bottom: 1.2em;
           text-align: center;
+          &._lg {
+            font-size: 28px;
+            margin-bottom: 0.2em;
+          }
+        }
+        &-body {
+          h4 {
+            text-align: center;
+            margin-bottom: 1.5em;
+          }
         }
       }
       &-banner {
@@ -486,7 +496,6 @@
     }
   }
 }
-
 @mixin createNft-740 {
   .createNft {
     padding: 40px 0;
@@ -531,6 +540,7 @@
     padding: 30px 0;
     &__inner {
       &-content {
+        margin-bottom: 30px;
         &-title {
           font-size: 18px;
         }
@@ -538,6 +548,13 @@
           flex-direction: column;
           margin-top: 25px;
           gap: 10px;
+        }
+        &-body {
+          ul {
+            li {
+              font-size: 18px;
+            }
+          }
         }
       }
     }
