@@ -4169,6 +4169,7 @@ li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  min-height: 50vh;
 }
 .createNft__inner-content {
   width: calc(100% - 400px - 40px);
@@ -4191,6 +4192,24 @@ li {
 }
 .createNft__inner-content._center {
   margin: 0 auto;
+}
+.createNft__inner-content-body ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  gap: 15px;
+  margin-bottom: 15px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+}
+.createNft__inner-content-body ul li strong {
+  color: #08a5ff;
 }
 .createNft__inner-banner {
   display: -webkit-box;
