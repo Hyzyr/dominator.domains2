@@ -2010,13 +2010,25 @@
     &--mobile {
       display: block;
     }
-    &__inner-group {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 30px;
-      min-height: 60vh;
+    &__inner {
+      &-list {
+        margin-bottom: 0;
+      }
+      &-title {
+        margin-bottom: 0;
+
+        h1 {
+          margin-bottom: 0;
+        }
+      }
+      &-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        min-height: 70vh;
+      }
     }
     .scrollingWords {
       position: relative;
