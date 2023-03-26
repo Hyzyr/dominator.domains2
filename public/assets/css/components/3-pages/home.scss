@@ -2155,6 +2155,9 @@
           width: calc(33.3% - 8px);
         }
       }
+      &-group {
+        min-height: 80vh;
+      }
     }
   }
   .integrations {
