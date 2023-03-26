@@ -13,6 +13,13 @@ if (menu && menuBtn) {
       toggleMenu();
     }
   };
+  document.querySelectorAll("[data-action='closeMenu']").forEach((event) => {
+    event.onclick = () => {
+      document.body.classList.remove("active");
+      menu.classList.remove("active");
+      menuBtn.classList.remove("active");
+    };
+  });
 }
 
 const howMenu = document.getElementById("howMenu");
