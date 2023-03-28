@@ -527,7 +527,7 @@
       background: $gradient-dark;
       opacity: 0.65;
     }
-    span {
+    &-item {
       display: flex !important;
       align-items: center;
       justify-content: center;
@@ -541,11 +541,12 @@
       font-style: normal;
       font-weight: 700;
       line-height: 1;
-    }
-    img {
-      width: 90%;
-      height: 3em;
-      object-fit: contain;
+
+      img {
+        width: 90%;
+        height: 3em;
+        object-fit: contain;
+      }
     }
     .slick {
       &-list {

@@ -2721,7 +2721,7 @@ li {
   background: linear-gradient(90deg, #410176 0%, #080609 96.96%);
   opacity: 0.65;
 }
-.hero__slider span {
+.hero__slider-item {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
@@ -2741,7 +2741,7 @@ li {
   font-weight: 700;
   line-height: 1;
 }
-.hero__slider img {
+.hero__slider-item img {
   width: 90%;
   height: 3em;
   -o-object-fit: contain;
