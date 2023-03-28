@@ -186,7 +186,7 @@
                     target="_blank"
                     class="button button--primary _xlg animated"
                   >
-                    <span> Buy Private Sale (15% Off)</span>
+                    <span>Buy Private Sale (15% Off)</span>
                   </a>
                 </div>
               </div>
@@ -215,29 +215,21 @@
               <div class="hero__inner-apps">
                 <h4>Available on</h4>
                 <div class="hero__inner-apps-links">
-                  <button class="_google">
+                  <a
+                    href="https://play.google.com/store/apps/details?id=app.dominator.domains"
+                    target="_blank"
+                  >
                     <img
                       src="./public/assets/images/home/google.png"
                       alt="googles"
                     />
-                  </button>
+                  </a>
                   <button class="_apple">
                     <img
                       src="./public/assets/images/home/apple.png"
                       alt="apples"
                     />
                   </button>
-                  <div class="hero__inner-apps-tab _google">
-                    App Submitted for approval to Google Play Store. Users can
-                    Beta test the App by downloading it
-                    <a
-                      class="textLink"
-                      href="https://drive.google.com/file/d/11YaeIS54s6hePFboAlQU15omnvFHeuEW/view?usp=sharing"
-                      target="_blank"
-                    >
-                      here
-                    </a>
-                  </div>
                   <div class="hero__inner-apps-tab _apple">
                     App Submitted for approval to Apple App Store. Users can
                     Beta test the App by downloading it
@@ -2808,57 +2800,58 @@
           </div>
         </div>
       </footer>
+
       <!-- footer end -->
-      <script src="./public/assets/js/wow.js"></script>
-      <script src="./public/assets/js/menu.js"></script>
-      <script src="./public/assets/js/tabs.js"></script>
-      <script>
-        const playVideo = document.getElementById("playVideo");
-        const showCopyText = (el, isCopied = true) => {
-          el.classList.add("active");
-
-          setTimeout(() => {
-            el.classList.remove("active");
-            el.innerHTML = isCopied ? "Copied" : "Error: not secure";
-          }, 2000);
-        };
-        const copy = (messageObj, text) => {
-          if (navigator.clipboard !== undefined) {
-            //Chrome
-            navigator.clipboard.writeText(text).then(
-              () => showCopyText(messageObj),
-              (err) => console.error("Async: Could not copy text: ", err)
-            );
-          } else if (window.clipboardData) {
-            // Internet Explorer
-            window.clipboardData.setData("Text", text);
-          } else {
-            showCopyText(messageObj, false);
-            console.error("Not https connection");
-          }
-        };
-
-        if (playVideo)
-          playVideo.onclick = () => {
-            const iframe = playVideo.querySelector("iframe");
-            console.log("click");
-            iframe.src = iframe.src + "?autoplay=1";
-            playVideo.classList.add("active");
-          };
-
-        new WOW({
-          boxClass: "animate",
-          animateClass: "animated",
-        }).init();
-
-        const copyBox = document.querySelector(".copyBox");
-        if (copyBox)
-          copyBox.onclick = () => {
-            let copyText = copyBox.querySelector(".copyBox__text");
-            let copyBoxMessage = copyBox.querySelector(".copyBox__message");
-            copy(copyBoxMessage, copyText.innerText);
-          };
-      </script>
     </div>
+    <script src="./public/assets/js/wow.js"></script>
+    <script src="./public/assets/js/menu.js"></script>
+    <script src="./public/assets/js/tabs.js"></script>
+    <script>
+      const playVideo = document.getElementById("playVideo");
+      const showCopyText = (el, isCopied = true) => {
+        el.classList.add("active");
+
+        setTimeout(() => {
+          el.classList.remove("active");
+          el.innerHTML = isCopied ? "Copied" : "Error: not secure";
+        }, 2000);
+      };
+      const copy = (messageObj, text) => {
+        if (navigator.clipboard !== undefined) {
+          //Chrome
+          navigator.clipboard.writeText(text).then(
+            () => showCopyText(messageObj),
+            (err) => console.error("Async: Could not copy text: ", err)
+          );
+        } else if (window.clipboardData) {
+          // Internet Explorer
+          window.clipboardData.setData("Text", text);
+        } else {
+          showCopyText(messageObj, false);
+          console.error("Not https connection");
+        }
+      };
+
+      if (playVideo)
+        playVideo.onclick = () => {
+          const iframe = playVideo.querySelector("iframe");
+          console.log("click");
+          iframe.src = iframe.src + "?autoplay=1";
+          playVideo.classList.add("active");
+        };
+
+      new WOW({
+        boxClass: "animate",
+        animateClass: "animated",
+      }).init();
+
+      const copyBox = document.querySelector(".copyBox");
+      if (copyBox)
+        copyBox.onclick = () => {
+          let copyText = copyBox.querySelector(".copyBox__text");
+          let copyBoxMessage = copyBox.querySelector(".copyBox__message");
+          copy(copyBoxMessage, copyText.innerText);
+        };
+    </script>
   </body>
 </html>

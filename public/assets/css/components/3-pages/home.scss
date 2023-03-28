@@ -234,7 +234,8 @@
         display: flex;
         gap: 20px;
 
-        button {
+        & > a,
+        & > button {
           display: flex;
           height: 55px;
           transition: 0.3s ease-in;

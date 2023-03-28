@@ -1,0 +1,1 @@
+<h1>Bots not allowed!</h1>

@@ -619,6 +619,25 @@
     }
   }
 }
+.captcha {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
 // Variables
 $item-count: 4;
 

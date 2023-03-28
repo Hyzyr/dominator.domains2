@@ -65,24 +65,40 @@
       &._center {
         margin: 0 auto;
       }
-      &-body {
-        ul {
-          li {
-            display: flex;
-            align-items: baseline;
-            gap: 15px;
-            margin-bottom: 15px;
 
+      &-list {
+        li {
+          display: flex;
+          align-items: baseline;
+          gap: 15px;
+          margin-bottom: 15px;
+
+          //font
+          font-family: $font-primary;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 1.5;
+          p {
             //font
             font-family: $font-primary;
             font-style: normal;
             font-weight: 500;
-            font-size: 20px;
+            font-size: inherit;
             line-height: 1.5;
+          }
 
-            strong {
-              color: $color-3;
-            }
+          strong {
+            color: $color-3;
+          }
+        }
+        a {
+          color: $white;
+          text-decoration: underline;
+          opacity: 0.6;
+          transition: 0.3s ease;
+          &:hover {
+            opacity: 0.8;
           }
         }
       }
@@ -91,7 +107,6 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-
       width: 400px;
 
       &-img {
@@ -220,9 +235,11 @@
   }
   &__img {
     position: relative;
+    width: 100%;
     padding-bottom: 100%;
     pointer-events: none;
     overflow: hidden;
+    background: $black-bg;
 
     &-text {
       position: absolute;
@@ -246,7 +263,8 @@
       text-align: center;
     }
 
-    img {
+    img,
+    video {
       position: absolute;
       top: 0;
       left: 0;
@@ -256,6 +274,22 @@
       &._small {
         transform: scale(0.7);
         object-fit: contain;
+      }
+    }
+    &._video {
+      padding-bottom: 55%;
+    }
+  }
+  &--qualify {
+    .createNft {
+      &__inner {
+        &-content {
+          width: calc(100% - 550px - 40px);
+          max-width: 620px;
+        }
+        &-banner {
+          width: 550px;
+        }
       }
     }
   }
@@ -420,6 +454,18 @@
         font-size: 18px;
       }
     }
+    &--qualify {
+      .createNft {
+        &__inner {
+          &-content {
+            width: calc(100% - 450px - 30px);
+          }
+          &-banner {
+            max-width: 450px;
+          }
+        }
+      }
+    }
   }
 }
 @mixin createNft-1025 {
@@ -494,6 +540,20 @@
         }
       }
     }
+    &--qualify {
+      .createNft {
+        &__inner {
+          &-content {
+            width: 100%;
+            width: 90%;
+          }
+          &-banner {
+            width: 100%;
+            max-width: 550px;
+          }
+        }
+      }
+    }
   }
 }
 @mixin createNft-740 {
@@ -549,11 +609,9 @@
           margin-top: 25px;
           gap: 10px;
         }
-        &-body {
-          ul {
-            li {
-              font-size: 18px;
-            }
+        &-list {
+          li {
+            font-size: 18px;
           }
         }
       }
