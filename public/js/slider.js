@@ -1,6 +1,6 @@
 //slider
 const slickSettings = {
-  slidesToShow: 6,
+  slidesToShow: 8,
   infinite: true,
   autoplay: true,
   autoplaySpeed: 0,
