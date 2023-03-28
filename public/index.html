@@ -198,26 +198,6 @@
               </div>
             </div>
             <div class="hero__inner-banner">
-              <div class="hero__inner-coins">
-                <span class="_arb">
-                  <img src="./assets/images/coins/arb.png" alt="" />
-                  .arb </span
-                >
-                <span class="_bnb">
-                  <img src="./assets/images/coins/bnb.png" alt="" />
-                  .bnb</span
-                >
-                <span class="_eth">
-                  <img src="./assets/images/coins/eth.png" alt="" />
-                  .eth </span
-                >
-                <span class="_bitcoin">.bitcoin</span>
-                <span class="_blockchain">.blockchain</span>
-                <span class="_crypto">.crypto</span>
-                <span class="_wallet">.wallet</span>
-                <span class="_nft">.nft </span>
-                <span class="_polygon">.polygon</span>
-              </div>
               <div class="hero__inner-apps">
                 <h4>Available on</h4>
                 <div class="hero__inner-apps-links">
@@ -268,6 +248,26 @@
                 <span> Listing Confirmed</span>
               </div>
             </div>
+          </div>
+          <div class="hero__slider slickSlider">
+            <span class="_arb">
+              <img src="./assets/images/coins/arb.png" alt="" />
+              .arb </span
+            >
+            <span class="_bnb">
+              <img src="./assets/images/coins/bnb.png" alt="" />
+              .bnb</span
+            >
+            <span class="_eth">
+              <img src="./assets/images/coins/eth.png" alt="" />
+              .eth </span
+            >
+            <span class="_bitcoin">.bitcoin</span>
+            <span class="_blockchain">.blockchain</span>
+            <span class="_crypto">.crypto</span>
+            <span class="_wallet">.wallet</span>
+            <span class="_nft">.nft </span>
+            <span class="_polygon">.polygon</span>
           </div>
         </div>
       </section>
@@ -434,7 +434,7 @@
       </section>
       <!-- hero section end -->
       <!-- integrations section end -->
-      <div class="integrations">
+      <section class="integrations">
         <div class="autoContainer">
           <div class="integrations__bg glow__outer">
             <span class="glow"></span>
@@ -558,7 +558,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <!-- integrations section end -->
       <!-- videoSection section end -->
       <section class="videoSection" id="why-you-should-invest">
@@ -585,7 +585,7 @@
       </section>
       <!-- videoSection section end -->
       <!-- table section start -->
-      <div class="comparisonTable" id="competitor-comparison">
+      <section class="comparisonTable" id="competitor-comparison">
         <div class="autoContainer">
           <div class="comparisonTable__bg">
             <span></span>
@@ -1288,7 +1288,7 @@
             </table>
           </div>
         </div>
-      </div>
+      </section>
       <!-- table section end -->
       <!-- highlights section end -->
       <!-- <div class="highlights">
@@ -1435,7 +1435,7 @@
       </div> -->
       <!-- highlights section end -->
       <!-- dominators section end -->
-      <div class="dominators">
+      <section class="dominators">
         <div class="autoContainer">
           <div class="dominators__bg glow__outer">
             <span class="glow cork"></span>
@@ -1612,10 +1612,10 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <!-- dominators section end -->
       <!-- advantages section end -->
-      <div class="advantages">
+      <section class="advantages">
         <div class="autoContainer">
           <div class="advantages__bg glow__outer">
             <span class="glow"></span>
@@ -1800,10 +1800,10 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <!-- advantages section end -->
       <!-- tokenomics section start -->
-      <div class="tokenomics">
+      <section class="tokenomics">
         <div class="autoContainer">
           <div class="tokenomics__bg glow__outer">
             <span class="glow"></span>
@@ -1947,10 +1947,10 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <!-- tokenomics section end -->
       <!-- roadMap section start -->
-      <div class="roadMap" id="roadmap">
+      <section class="roadMap" id="roadmap">
         <div class="autoContainer">
           <div class="roadMap__bg glow__outer">
             <span class="glow"></span>
@@ -2151,10 +2151,10 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <!-- roadMap section end -->
       <!-- partners section start -->
-      <div class="platforms">
+      <section class="platforms">
         <div class="autoContainer">
           <div class="platforms__inner">
             <h3 class="gradientText gradientText--secondary">
@@ -2182,10 +2182,10 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <!-- partners section end -->
       <!-- partners section start -->
-      <div class="partners">
+      <section class="partners">
         <div class="autoContainer">
           <div class="partners__inner">
             <h3 class="gradientText gradientText--secondary">
@@ -2299,10 +2299,10 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <!-- partners section start -->
       <!-- partners section start -->
-      <div class="partners">
+      <section class="partners">
         <div class="autoContainer">
           <div class="partners__inner">
             <h3 class="gradientText gradientText--secondary">
@@ -2442,7 +2442,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <!-- partners section start -->
       <!-- team section end -->
       <!-- <div class="team">
@@ -2704,10 +2704,13 @@
           </div>
         </div>
       </footer>
-
+    </div>
     <script src="./assets/js/wow.js"></script>
     <script src="./assets/js/menu.js"></script>
     <script src="./assets/js/tabs.js"></script>
+    <script src="js/slick.jquery.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/slider.js"></script>
     <script>
       const playVideo = document.getElementById("playVideo");
       const showCopyText = (el, isCopied = true) => {
@@ -2754,7 +2757,6 @@
           let copyBoxMessage = copyBox.querySelector(".copyBox__message");
           copy(copyBoxMessage, copyText.innerText);
         };
-
     </script>
   </body>
 </html>
