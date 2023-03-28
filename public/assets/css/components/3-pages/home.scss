@@ -1461,7 +1461,6 @@
     }
   }
   &__inner {
-    position: relative;
     padding: 70px 0;
 
     &:after {
@@ -1479,90 +1478,103 @@
 
     h3 {
       text-align: center;
-      margin-bottom: 100px;
+      margin-bottom: 50px;
     }
-    &-img {
-      position: absolute;
-      top: 50%;
-      right: 0;
-      width: calc(100% - 600px - 60px);
-      max-width: 500px;
-      transform: translateY(-50%);
-      pointer-events: none;
 
-      ul {
-        position: relative;
-        width: 100%;
-        padding-bottom: 100%;
+    &-header {
+      position: relative;
+      padding: 100px 0;
+
+      &-title {
+        width: 50%;
+        max-width: 600px;
+        margin-right: auto;
+        h4 {
+          margin-bottom: 10px;
+        }
       }
-      li {
+      &-img {
         position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        display: flex;
-        animation: 14s rotate cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
-        animation-fill-mode: both;
+        top: 50%;
+        right: 10%;
+        width: 40%;
+        max-width: 380px;
+        max-height: 100%;
+        transform: translateY(-50%);
+        pointer-events: none;
 
-        img {
-          @include fullImage;
+        ul {
+          position: relative;
+          width: 100%;
+          padding-bottom: 100%;
         }
+        li {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          display: flex;
+          animation: 14s rotate cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
+          animation-fill-mode: both;
 
-        &:nth-child(2) {
-          animation-delay: 1.3s;
-        }
-        &:nth-child(3) {
-          animation-delay: 2.5s;
-        }
-        &:nth-child(4) {
-          animation-delay: 3.9s;
-        }
-        &:nth-child(5) {
-          animation-delay: 4.12s;
+          img {
+            @include fullImage;
+          }
+
+          &:nth-child(2) {
+            animation-delay: 1.3s;
+          }
+          &:nth-child(3) {
+            animation-delay: 2.5s;
+          }
+          &:nth-child(4) {
+            animation-delay: 3.9s;
+          }
+          &:nth-child(5) {
+            animation-delay: 4.12s;
+          }
         }
       }
     }
     &-content {
-      width: 600px;
-      margin-right: auto;
+      &-row {
+        display: flex;
+        justify-content: space-between;
+        ul {
+          margin-top: 30px;
 
-      h4 {
-        margin-bottom: 10px;
-      }
-      ul {
-        margin-top: 30px;
+          li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            //font
+            color: $white-1;
+            font-family: $font-secondary;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 28px;
+            line-height: 1;
 
-        li {
-          display: flex;
-          align-items: center;
-          margin-bottom: 15px;
-          //font
-          color: $white-1;
-          font-family: $font-secondary;
-          font-style: normal;
-          font-weight: 500;
-          font-size: 28px;
-          line-height: 1;
-
-          &:last-child {
-            margin: 0;
-          }
-
-          span {
-            position: relative;
-            font-size: inherit;
-            margin-right: 0.5em;
-            img {
-              width: 2.6em;
-              height: 2.6em;
-              object-fit: contain;
+            &:last-child {
+              margin: 0;
             }
-            small {
-              font-size: 0.7em;
-              position: absolute;
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%, -50%);
+
+            span {
+              position: relative;
+              font-size: inherit;
+              margin-right: 0.5em;
+              img {
+                width: 2.6em;
+                height: 2.6em;
+                object-fit: contain;
+              }
+              small {
+                font-size: 0.7em;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+              }
             }
           }
         }
@@ -1732,9 +1744,11 @@
   .tokenomics {
     &__inner {
       &-content {
-        ul {
-          li {
-            font-size: 24px;
+        &-row {
+          ul {
+            li {
+              font-size: 24px;
+            }
           }
         }
       }
@@ -1894,17 +1908,25 @@
   }
   .tokenomics {
     &__inner {
-      &-content {
-        width: 400px;
-
-        ul {
-          li {
-            font-size: 20px;
-          }
+      &-header {
+        padding: 80px 0;
+        &-title {
+          width: 60%;
+          max-width: 450px;
+        }
+        &-img {
+          width: 30%;
+          right: 5%;
         }
       }
-      &-img {
-        width: calc(100% - 400px - 40px);
+      &-content {
+        &-row {
+          ul {
+            li {
+              font-size: 20px;
+            }
+          }
+        }
       }
     }
   }
@@ -2031,25 +2053,14 @@
   }
   .tokenomics {
     &__inner {
-      flex-direction: column;
-
       &-content {
-        text-align: center;
-        max-width: unset;
-        width: 100%;
-
-        ul {
-          li {
-            font-size: 18px;
+        &-row {
+          ul {
+            li {
+              font-size: 18px;
+            }
           }
         }
-      }
-      &-img {
-        position: unset;
-        width: 90%;
-        max-width: 450px;
-        margin: 0 auto 30px auto;
-        transform: unset;
       }
     }
   }
@@ -2195,6 +2206,42 @@
       &-header {
         p {
           font-size: 16px;
+        }
+      }
+    }
+  }
+  .tokenomics {
+    &__inner {
+      flex-direction: column;
+
+      &-header {
+        padding: 0;
+        margin-bottom: 60px;
+
+        &-title {
+          width: 100%;
+          margin-bottom: 60px;
+        }
+        &-img {
+          position: unset;
+          width: 90%;
+          max-width: 450px;
+          margin: 0 auto 30px auto;
+          transform: unset;
+        }
+      }
+      &-content {
+        text-align: center;
+        max-width: unset;
+
+        &-row {
+          flex-direction: column;
+          ul {
+            width: 100%;
+            li {
+              font-size: 18px;
+            }
+          }
         }
       }
     }

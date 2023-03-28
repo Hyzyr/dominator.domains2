@@ -5,7 +5,7 @@ const slickSettings = {
   autoplay: true,
   autoplaySpeed: 0,
   speed: 4800,
-  cssEase:'linear',
+  cssEase: "linear",
   centerMode: true,
   focusOnSelect: true,
   arrows: false,
@@ -14,41 +14,34 @@ const slickSettings = {
     {
       breakpoint: 1025,
       settings: {
-        slidesToShow: 4,
-        speed: 1000,
-        autoplay: true,
+        slidesToShow: 6,
       },
     },
     {
-      breakpoint: 720,
+      breakpoint: 770,
       settings: {
-        slidesToShow: 3,
-        speed: 1000,
-        autoplay: true,
+        slidesToShow: 4,
       },
     },
     {
       breakpoint: 590,
       settings: {
-        slidesToShow: 2.6,
-        speed: 1000,
-        autoplay: true,
+        slidesToShow: 3,
+      },
+    },
+
+    {
+      breakpoint: 480,
+      settings: {
+        speed: 3000,
+        slidesToShow: 2.2,
       },
     },
     {
-      breakpoint: 520,
+      breakpoint: 420,
       settings: {
-        slidesToShow: 2,
-        speed: 1000,
-        autoplay: true,
-      },
-    },
-    {
-      breakpoint: 460,
-      settings: {
-        slidesToShow: 1,
-        speed: 1000,
-        autoplay: true,
+        speed: 2600,
+        slidesToShow: 1.5,
       },
     },
   ],
