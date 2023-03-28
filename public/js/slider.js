@@ -4,7 +4,7 @@ const slickSettings = {
   infinite: true,
   autoplay: true,
   autoplaySpeed: 0,
-  speed: 2000,
+  speed: 3500,
   cssEase:'linear',
   centerMode: true,
   focusOnSelect: true,
