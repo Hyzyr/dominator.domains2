@@ -2705,26 +2705,6 @@
         </div>
       </footer>
 
-      <div
-        class="captcha"
-        id="captcha"
-        style="position: fixed; bottom: 0; left: 0"
-      >
-        <div class="captcha__inner">
-          <div
-            class="cf-turnstile"
-            data-sitekey="0x4AAAAAAADiMxLuTBnXAHly"
-            data-callback="javascriptCallback"
-          ></div>
-        </div>
-      </div>
-      <!-- footer end -->
-    </div>
-    <script
-      src="https://challenges.cloudflare.com/turnstile/v0/api.js"
-      async
-      defer
-    ></script>
     <script src="./assets/js/wow.js"></script>
     <script src="./assets/js/menu.js"></script>
     <script src="./assets/js/tabs.js"></script>
@@ -2775,31 +2755,6 @@
           copy(copyBoxMessage, copyText.innerText);
         };
 
-      function javascriptCallback(token) {
-        if (!token) {
-          window.location.replace("/bot.php");
-          return;
-        }
-        fetch(`/recaptcha.php`, {
-          method: "POST",
-          redirect: "follow",
-          body: JSON.stringify({ token }),
-        })
-          .then((response) => {
-            if (response.status === 200) {
-              console.log("captcha");
-              document.getElementById("captcha").style.display = "none";
-            } else {
-              window.location.replace("/bot.php");
-              console.log("response.status", response.status);
-            }
-          })
-          .catch((err) => {
-            console.log("err");
-            console.log(err);
-            window.location.replace("/bot.php");
-          });
-      }
     </script>
   </body>
 </html>
