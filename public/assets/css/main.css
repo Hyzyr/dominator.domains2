@@ -3672,6 +3672,8 @@ li {
 
 .tokenomics {
   position: relative;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
 }
 .tokenomics__bg span:nth-child(1) {
   top: 20%;
@@ -3708,7 +3710,7 @@ li {
   z-index: -2;
 }
 .tokenomics__inner {
-  padding: 70px 0;
+  padding: 20px 0 60px 0;
 }
 .tokenomics__inner:after {
   content: "";
@@ -5156,6 +5158,11 @@ li {
     bottom: unset;
     -webkit-transform: translate(50%, -50%);
             transform: translate(50%, -50%);
+  }
+  .tokenomics {
+    -webkit-transform: unset;
+            transform: unset;
+    padding: 60px 0;
   }
   .tokenomics__inner-header {
     padding: 80px 0;

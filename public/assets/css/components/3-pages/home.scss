@@ -1423,6 +1423,7 @@
 }
 .tokenomics {
   position: relative;
+  transform: scale(0.8);
 
   &__bg {
     span {
@@ -1461,7 +1462,7 @@
     }
   }
   &__inner {
-    padding: 70px 0;
+    padding: 20px 0 60px 0;
 
     &:after {
       content: "";
@@ -1907,6 +1908,9 @@
     }
   }
   .tokenomics {
+    transform: unset;
+    padding: 60px 0;
+
     &__inner {
       &-header {
         padding: 80px 0;
