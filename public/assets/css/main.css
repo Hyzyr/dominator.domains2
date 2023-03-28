@@ -5162,6 +5162,8 @@ li {
   .tokenomics {
     -webkit-transform: unset;
             transform: unset;
+  }
+  .tokenomics__inner {
     padding: 60px 0;
   }
   .tokenomics__inner-header {
