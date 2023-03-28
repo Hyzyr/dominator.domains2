@@ -2747,6 +2747,9 @@ li {
   -o-object-fit: contain;
      object-fit: contain;
 }
+.hero__slider-item._whiteBg {
+  background: #fff;
+}
 .hero__slider .slick-list {
   overflow: visible;
 }

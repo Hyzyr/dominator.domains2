@@ -547,6 +547,10 @@
         height: 3em;
         object-fit: contain;
       }
+
+      &._whiteBg {
+        background: $white;
+      }
     }
     .slick {
       &-list {
