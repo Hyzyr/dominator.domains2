@@ -1182,12 +1182,6 @@ li {
 }
 
 .scrollingWords__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   font-size: 24px;
   font-weight: 600;
   font-family: "Raleway", sans-serif;
@@ -1201,35 +1195,30 @@ li {
   padding: 0.5em 1em;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-.scrollingWords__content-box {
   height: 3rem;
   margin: auto;
   overflow: hidden;
 }
-.scrollingWords__content-box ul {
+.scrollingWords__content ul {
   margin: 0;
   padding: 0;
   -webkit-animation: scrollUp 7s infinite;
           animation: scrollUp 7s infinite;
 }
-.scrollingWords__content-box ul li {
+.scrollingWords__content ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 3rem;
   list-style: none;
-  color: #08a5ff;
-}
-.scrollingWords__content-box ul li span {
   color: #fff;
-  margin-left: 0.4em;
+  text-align: center;
 }
 
 .popup {

@@ -527,8 +527,6 @@
 }
 .scrollingWords {
   &__content {
-    display: flex;
-    align-items: center;
     font-size: 24px;
     font-weight: 600;
     font-family: $font-primary;
@@ -539,29 +537,22 @@
     border-radius: 20px;
     padding: 0.5em 1em;
     box-sizing: border-box;
+    height: 3rem;
+    margin: auto;
+    overflow: hidden;
 
-    &-box {
-      height: 3rem;
-      margin: auto;
-      overflow: hidden;
-
-      ul {
-        margin: 0;
-        padding: 0;
-        animation: scrollUp 7s infinite;
-        li {
-          display: flex;
-          align-items: center;
-          justify-content: flex-end;
-          height: 3rem;
-          list-style: none;
-          color: $color-3;
-
-          span {
-            color: $white;
-            margin-left: 0.4em;
-          }
-        }
+    ul {
+      margin: 0;
+      padding: 0;
+      animation: scrollUp 7s infinite;
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 3rem;
+        list-style: none;
+        color: $white;
+        text-align: center;
       }
     }
   }
